@@ -5,6 +5,9 @@ import { Shield, Zap, Globe, Server } from "lucide-react"
 
 export default function VPNBuilder() {
   const [protocol, setProtocol] = useState("WireGuard")
+  const copyCommand = (text: string) => {
+  navigator.clipboard.writeText(text)
+}
 
   const protocolInfo: Record<string, { title: string; description: string; commands: string[] }> = {
     WireGuard: {
