@@ -5,6 +5,7 @@ import { Shield, Zap, Globe, Server } from "lucide-react"
 
 export default function VPNBuilder() {
   const [protocol, setProtocol] = useState("WireGuard")
+  const [provider, setProvider] = useState("Oracle Cloud")
   const copyCommand = (text: string) => {
   navigator.clipboard.writeText(text)
 }
