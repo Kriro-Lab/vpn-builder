@@ -267,3 +267,6 @@ export default function VPNBuilder() {
     Next we can make the setup commands change based on both the VPN protocol and the cloud provider.
   </p>
 </div>
+      </main>
+)
+}
