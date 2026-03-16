@@ -158,21 +158,39 @@ export default function VPNBuilder() {
 
         <div style={{ display: "grid", gap: "12px" }}>
           {selected.commands.map((command) => (
-            <div
-              key={command}
-              style={{
-                background: "#111827",
-                color: "white",
-                padding: "14px",
-                borderRadius: "10px",
-                fontFamily: "monospace",
-                fontSize: "14px",
-                overflowX: "auto",
-              }}
-            >
-              {command}
-            </div>
-          ))}
+  <div
+    key={command}
+    style={{
+      background: "#111827",
+      color: "white",
+      padding: "14px",
+      borderRadius: "10px",
+      fontFamily: "monospace",
+      fontSize: "14px",
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      gap: "10px"
+    }}
+  >
+    <span>{command}</span>
+
+    <button
+      onClick={() => copyCommand(command)}
+      style={{
+        background:"#2563eb",
+        border:"none",
+        color:"white",
+        padding:"6px 10px",
+        borderRadius:"6px",
+        cursor:"pointer",
+        fontSize:"12px"
+      }}
+    >
+      Copy
+    </button>
+  </div>
+))}
         </div>
       </div>
 
