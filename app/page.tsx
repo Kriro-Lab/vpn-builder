@@ -196,18 +196,74 @@ export default function VPNBuilder() {
       </div>
 
       <div
-        style={{
-          background: "#ffffff",
-          border: "1px solid #ddd",
-          borderRadius: "16px",
-          padding: "28px",
-        }}
-      >
-        <h3 style={{ fontSize: "22px", marginBottom: "10px" }}>Next Step</h3>
-        <p style={{ margin: 0 }}>
-          Next we can add a cloud provider selector for Oracle, AWS, DigitalOcean, or Vultr and generate provider-specific instructions.
-        </p>
-      </div>
-    </main>
-  )
-}
+  style={{
+    background: "#ffffff",
+    border: "1px solid #ddd",
+    borderRadius: "16px",
+    padding: "28px",
+    marginBottom: "30px",
+  }}
+>
+  <h2 style={{ fontSize: "32px", marginBottom: "10px", fontWeight: 800 }}>
+    Step 2: Choose Cloud Provider
+  </h2>
+
+  <p style={{ marginBottom: "25px", fontSize: "18px" }}>
+    Pick where you want to host your VPN server.
+  </p>
+
+  <div
+    style={{
+      display: "flex",
+      gap: "16px",
+      flexWrap: "wrap",
+      marginBottom: "30px",
+    }}
+  >
+    <button onClick={() => setProvider("Oracle Cloud")} style={buttonStyle(provider === "Oracle Cloud")}>
+      <strong>Oracle Cloud</strong>
+      <div style={{ marginTop: "10px", color: "#2563eb" }}>Free tier option</div>
+    </button>
+
+    <button onClick={() => setProvider("AWS")} style={buttonStyle(provider === "AWS")}>
+      <strong>AWS</strong>
+      <div style={{ marginTop: "10px", color: "#2563eb" }}>Popular and flexible</div>
+    </button>
+
+    <button onClick={() => setProvider("DigitalOcean")} style={buttonStyle(provider === "DigitalOcean")}>
+      <strong>DigitalOcean</strong>
+      <div style={{ marginTop: "10px", color: "#2563eb" }}>Simple VPS setup</div>
+    </button>
+
+    <button onClick={() => setProvider("Vultr")} style={buttonStyle(provider === "Vultr")}>
+      <strong>Vultr</strong>
+      <div style={{ marginTop: "10px", color: "#2563eb" }}>Cheap server option</div>
+    </button>
+  </div>
+
+  <div
+    style={{
+      background: "#f8fafc",
+      border: "1px solid #ddd",
+      borderRadius: "16px",
+      padding: "24px",
+    }}
+  >
+    <h3 style={{ fontSize: "22px", marginBottom: "10px" }}>Selected Provider</h3>
+    <p style={{ fontSize: "20px", margin: 0 }}>{provider}</p>
+  </div>
+</div>
+
+<div
+  style={{
+    background: "#ffffff",
+    border: "1px solid #ddd",
+    borderRadius: "16px",
+    padding: "28px",
+  }}
+>
+  <h3 style={{ fontSize: "22px", marginBottom: "10px" }}>Next Step</h3>
+  <p style={{ margin: 0 }}>
+    Next we can make the setup commands change based on both the VPN protocol and the cloud provider.
+  </p>
+</div>
