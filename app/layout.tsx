@@ -1,7 +1,7 @@
-export default function RootLayout({
+import type { ReactNode } from "react"
   children,
 }: {
-  children: React.ReactNode
+  children: ReactNode
 }) {
   return (
     <html lang="en">
