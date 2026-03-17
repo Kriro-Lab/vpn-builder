@@ -46,8 +46,56 @@ const copyCommand = (text: string, index: number) => {
       ],
     },
   }
+  const providerInfo: Record<string, {
+  price: string
+  size: string
+  regionTip: string
+  notes: string[]
+}> = {
+  "Oracle Cloud": {
+    price: "Free tier possible",
+    size: "Always Free VM or small ARM instance",
+    regionTip: "Choose the region closest to you",
+    notes: [
+      "Great low-cost starting option",
+      "Make sure your security list allows VPN traffic",
+      "Good for personal use and testing"
+    ],
+  },
+  AWS: {
+    price: "About $4–$8/month",
+    size: "t3.micro or Lightsail equivalent",
+    regionTip: "Use the nearest region for lower latency",
+    notes: [
+      "Reliable and flexible",
+      "Remember to open the right inbound ports",
+      "Easy to scale later"
+    ],
+  },
+  DigitalOcean: {
+    price: "About $6/month",
+    size: "Basic Droplet",
+    regionTip: "Pick the closest datacenter",
+    notes: [
+      "Simple VPS setup",
+      "Very beginner friendly",
+      "Fast to deploy and manage"
+    ],
+  },
+  Vultr: {
+    price: "About $5–$6/month",
+    size: "Regular Cloud Compute",
+    regionTip: "Choose the nearest location",
+    notes: [
+      "Cheap and straightforward",
+      "Good balance of cost and simplicity",
+      "Works well for self-hosted VPNs"
+    ],
+  },
+}
 
   const selected = protocolInfo[protocol]
+  const selectedProvider = providerInfo[provider]
 
   const cardStyle: React.CSSProperties = {
     border: "1px solid #ddd",
@@ -257,7 +305,14 @@ const copyCommand = (text: string, index: number) => {
   {provider}
 </p>
   </div>
+</div>
 
+{/* 🔥 STEP 3 GOES HERE */}
+<div>
+  ...your Step 3 code...
+</div>
+
+</main>
 
 <div
   style={{
