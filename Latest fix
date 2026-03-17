@@ -257,7 +257,9 @@ const copyCommand = (text: string, index: number) => {
     }}
   >
     <h3 style={{ fontSize: "22px", marginBottom: "10px" }}>
-    <p style={{ fontSize: "20px", margin: 0 }}>{provider}</p>
+    <p style={{ fontSize: "20px", margin: 0 }}>
+  {provider}
+</p>
   </div>
 </div>
 
