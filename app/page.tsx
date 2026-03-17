@@ -274,4 +274,4 @@ const copyCommand = (text: string, index: number) => {
 </div>
       </main>
 )
-}
+} 
