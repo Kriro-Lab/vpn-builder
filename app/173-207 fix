@@ -170,53 +170,43 @@ const copyCommand = (text: string, index: number) => {
 <h4 style={{ fontSize: "20px", marginBottom: "12px" }}>
   Starter Commands
 </h4>
-
-      
-  
-    key={command}
-    style={{
-      background: "#111827",
-      color: "white",
-      padding: "14px",
-      borderRadius: "10px",
-      fontFamily: "monospace",
-      fontSize: "14px",
-      display: "flex",
-      justifyContent: "space-between",
-      alignItems: "center",
-      gap: "10px"
-    }}
-  >
-    <span>{command}</span>
-
-    <button
-  onClick={() => copyCommand(command, index)}
+<div style={{ display: "grid", gap: "12px" }}>
+  {selected.commands.map((command, index) => (
+    <div
+      key={command}
       style={{
-        background:"#2563eb",
-        border:"none",
-        color:"white",
-        padding:"6px 10px",
-        borderRadius:"6px",
-        cursor:"pointer",
-        fontSize:"12px"
+        background: "#111827",
+        color: "white",
+        padding: "14px",
+        borderRadius: "10px",
+        fontFamily: "monospace",
+        fontSize: "14px",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        gap: "10px",
       }}
     >
-      {copiedIndex === index ? "Copied ✓" : "Copy"}
-    </button>
-  </div>
-))}
-        </div>
-      </div>
+      <span>{command}</span>
 
-      <div
-  style={{
-    background: "#ffffff",
-    border: "1px solid #ddd",
-    borderRadius: "16px",
-    padding: "28px",
-    marginBottom: "30px",
-  }}
->
+      <button
+        onClick={() => copyCommand(command, index)}
+        style={{
+          background: "#2563eb",
+          border: "none",
+          color: "white",
+          padding: "6px 10px",
+          borderRadius: "6px",
+          cursor: "pointer",
+          fontSize: "12px",
+        }}
+      >
+        {copiedIndex === index ? "Copied ✓" : "Copy"}
+      </button>
+    </div>
+  ))}
+  </div>
+</div>
   <h2 style={{ fontSize: "32px", marginBottom: "10px", fontWeight: 800 }}>
     Step 2: Choose Cloud Provider
   </h2>
