@@ -160,9 +160,9 @@ const copyCommand = (text: string, index: number) => {
         }}
       >
         <h3 style={{ fontSize: "22px", marginBottom: "8px" }}>{selected.title}</h3>
-        <p style={{ color: "#555", marginBottom: "20px" }}>{selected.description}</p>
+        <p style={{ color: "#555", marginBottom
 
-        <h4 style={{ marginBottom: "12px" }}>Starter Commands</h4>
+        <h4 style={{ fontSize: "20px", marginBottom: "12px" }}>Starter Commands</h4>
 
         <div style={{ display: "grid", gap: "12px" }}>
           {selected.commands.map((command) => (
