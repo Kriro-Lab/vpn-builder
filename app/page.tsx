@@ -6,8 +6,15 @@ import { Shield, Zap, Globe, Server } from "lucide-react"
 export default function VPNBuilder() {
   const [protocol, setProtocol] = useState("WireGuard")
   const [provider, setProvider] = useState("Oracle Cloud")
-  const copyCommand = (text: string) => {
+  const [copiedIndex, setCopiedIndex] = useState<number | null>(null)
+
+const copyCommand = (text: string, index: number) => {
   navigator.clipboard.writeText(text)
+  setCopiedIndex(index)
+
+  setTimeout(() => {
+    setCopiedIndex(null)
+  }, 1500)
 }
 
   const protocolInfo: Record<string, { title: string; description: string; commands: string[] }> = {
@@ -177,7 +184,7 @@ export default function VPNBuilder() {
     <span>{command}</span>
 
     <button
-      onClick={() => copyCommand(command)}
+  onClick={() => copyCommand(command, index)}
       style={{
         background:"#2563eb",
         border:"none",
@@ -188,7 +195,7 @@ export default function VPNBuilder() {
         fontSize:"12px"
       }}
     >
-      Copy
+      {copiedIndex === index ? "Copied ✓" : "Copy"}
     </button>
   </div>
 ))}
