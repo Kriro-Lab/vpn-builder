@@ -252,12 +252,12 @@ const copyCommand = (text: string, index: number) => {
       padding: "24px",
     }}
   >
-    <h3 style={{ fontSize: "22px", marginBottom: "10px" }}>
-    <p style={{ fontSize: "20px", margin: 0 }}>
+<h3 style={{ fontSize: "22px", marginBottom: "10px" }}>Selected Provider</h3>
+<p style={{ fontSize: "20px", margin: 0 }}>
   {provider}
 </p>
   </div>
-</div>
+
 
 <div
   style={{
