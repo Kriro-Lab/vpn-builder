@@ -305,11 +305,69 @@ const copyCommand = (text: string, index: number) => {
   {provider}
 </p>
   </div>
-</div>
+<div
+  style={{
+    background: "#ffffff",
+    border: "1px solid #ddd",
+    borderRadius: "16px",
+    padding: "28px",
+    marginBottom: "30px",
+  }}
+>
+  <h2 style={{ fontSize: "32px", marginBottom: "10px" }}>
+    Step 3: Generate Setup Plan
+  </h2>
 
-{/* 🔥 STEP 3 GOES HERE */}
-<div>
-  ...your Step 3 code...
+  <p style={{ marginBottom: "25px", fontSize: "18px", color: "#555" }}>
+    Based on your selections, here is your recommended setup.
+  </p>
+
+  <div style={{ display: "grid", gap: "18px" }}>
+    <div
+      style={{
+        background: "#f8fafc",
+        border: "1px solid #ddd",
+        borderRadius: "14px",
+        padding: "20px",
+      }}
+    >
+      <h3 style={{ fontSize: "22px", marginBottom: "10px" }}>Summary</h3>
+      <p><strong>Protocol:</strong> {protocol}</p>
+      <p><strong>Provider:</strong> {provider}</p>
+      <p><strong>Estimated cost:</strong> {selectedProvider.price}</p>
+      <p><strong>Server size:</strong> {selectedProvider.size}</p>
+    </div>
+
+    <div
+      style={{
+        background: "#f8fafc",
+        border: "1px solid #ddd",
+        borderRadius: "14px",
+        padding: "20px",
+      }}
+    >
+      <h3 style={{ fontSize: "22px", marginBottom: "10px" }}>Region Tip</h3>
+      <p>{selectedProvider.regionTip}</p>
+    </div>
+
+    <div
+      style={{
+        background: "#f8fafc",
+        border: "1px solid #ddd",
+        borderRadius: "14px",
+        padding: "20px",
+      }}
+    >
+      <h3 style={{ fontSize: "22px", marginBottom: "10px" }}>Quick Notes</h3>
+      <ul style={{ paddingLeft: "20px", margin: 0 }}>
+        {selectedProvider.notes.map((note) => (
+          <li key={note} style={{ marginBottom: "8px" }}>
+            {note}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
 </div>
 
 </main>
