@@ -364,6 +364,25 @@ const copyCommand = (text: string, index: number) => {
 <p style={{ marginTop: "10px", fontSize: "14px", color: "#666" }}>
   Takes ~5 minutes. No advanced knowledge needed.
 </p>
+    <div style={{ marginTop: "20px" }}>
+  <button
+    onClick={() => {
+      const fullScript = selected.commands.join("\n")
+      navigator.clipboard.writeText(fullScript)
+    }}
+    style={{
+      background: "#111",
+      color: "white",
+      padding: "10px 16px",
+      borderRadius: "8px",
+      border: "none",
+      cursor: "pointer",
+      marginRight: "10px"
+    }}
+  >
+    📋 Copy Full Setup Script
+  </button>
+</div>
 
     <div
       style={{
