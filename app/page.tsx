@@ -416,6 +416,8 @@ const copyCommand = (text: string, index: number) => {
       borderRadius: "8px",
       border: "none",
       cursor: "pointer",
+      transition: "all 0.2s ease",
+boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
     }}
   >
     ⬇️ Download Setup Script
