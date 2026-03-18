@@ -383,6 +383,30 @@ const copyCommand = (text: string, index: number) => {
     📋 Copy Full Setup Script
   </button>
 </div>
+    <div style={{ marginTop: "12px" }}>
+  <button
+    onClick={() => {
+      const fullScript = selected.commands.join("\n")
+      const blob = new Blob([fullScript], { type: "text/plain" })
+      const url = URL.createObjectURL(blob)
+      const a = document.createElement("a")
+      a.href = url
+      a.download = `${protocol.toLowerCase()}-${provider.toLowerCase().replace(/\s+/g, "-")}-setup.sh`
+      a.click()
+      URL.revokeObjectURL(url)
+    }}
+    style={{
+      background: "#0f172a",
+      color: "white",
+      padding: "10px 16px",
+      borderRadius: "8px",
+      border: "none",
+      cursor: "pointer",
+    }}
+  >
+    ⬇️ Download Setup Script
+  </button>
+</div>
 
     <div
       style={{
