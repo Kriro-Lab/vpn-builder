@@ -372,19 +372,6 @@ const copyCommand = (text: string, index: number) => {
 
 </main>
 
-<div
-  style={{
-    background: "#ffffff",
-    border: "1px solid #ddd",
-    borderRadius: "16px",
-    padding: "28px",
-  }}
->
-  <h3 style={{ fontSize: "22px", marginBottom: "10px" }}>Next Step</h3>
-  <p style={{ margin: 0 }}>
-    Next we can make the setup commands change based on both the VPN protocol and the cloud provider.
-  </p>
-</div>
-      </main>
+
 )
 } 
