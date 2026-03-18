@@ -379,7 +379,6 @@ const copyCommand = (text: string, index: number) => {
 <p style={{ marginTop: "10px", fontSize: "14px", color: "#666" }}>
   Takes ~5 minutes. No advanced knowledge needed.
 </p>
-    <div style={{ marginTop: "20px" }}>
   <button
     onClick={() => {
       const fullScript = selected.commands.join("\n")
