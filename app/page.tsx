@@ -357,6 +357,9 @@ const copyCommand = (text: string, index: number) => {
       fontWeight: "bold",
     }}
   >
+    <p style={{ fontSize: "14px", color: "#666", marginBottom: "12px" }}>
+  Recommended for most people
+</p>
     🚀 Launch Server
   </a>
 </div>
