@@ -369,29 +369,10 @@ const copyCommand = (text: string, index: number) => {
     🚀 Launch Server
   </a>
 </div>
-  </p>
+  
 
-  <a
-    href={
-      provider === "Oracle Cloud"
-        ? "https://www.oracle.com/cloud/"
-        : provider === "AWS"
-        ? "https://aws.amazon.com/free/"
-        : "https://www.vultr.com/"
-    }
-    target="_blank"
-    style={{
-      display: "inline-block",
-      background: "#2563eb",
-      color: "white",
-      padding: "10px 16px",
-      borderRadius: "8px",
-      textDecoration: "none",
-      fontWeight: "bold",
-    }}
-  >
-    🚀 Launch Server
-  </a>
+  
+      
 
     
 
