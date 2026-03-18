@@ -331,13 +331,22 @@ const copyCommand = (text: string, index: number) => {
         padding: "20px",
       }}
     >
-      <h3 style={{ fontSize: "22px", marginBottom: "10px" }}>Summary</h3>
-      <p><strong>Protocol:</strong> {protocol}</p>
-      <p><strong>Provider:</strong> {provider}</p>
-      <p><strong>Estimated cost:</strong> {selectedProvider.price}</p>
-      <p><strong>Server size:</strong> {selectedProvider.size}</p>
-    </div>
-    <div style={{ marginTop: "20px" }}>
+      <h3 style={{ fontSize: "22px", marginBottom: "10px" }}>
+  Summary
+</h3>
+
+<p><strong>Protocol:</strong> {protocol}</p>
+<p><strong>Provider:</strong> {provider}</p>
+<p><strong>Estimated cost:</strong> {selectedProvider.price}</p>
+<p><strong>Server size:</strong> {selectedProvider.size}</p>
+
+</div>
+
+<div style={{ marginTop: "20px" }}>
+  <p style={{ fontSize: "14px", color: "#666", marginBottom: "12px" }}>
+    Recommended for most people
+  </p>
+
   <a
     href={
       provider === "Oracle Cloud"
@@ -357,30 +366,34 @@ const copyCommand = (text: string, index: number) => {
       fontWeight: "bold",
     }}
   >
-    <p style={{ fontSize: "14px", color: "#666", marginBottom: "12px" }}>
-  Recommended for most people
-</p>
-    <a
-  href={
-    provider === "Oracle Cloud"
-      ? "https://www.oracle.com/cloud/"
-      : provider === "AWS"
-      ? "https://aws.amazon.com/free/"
-      : "https://www.vultr.com/"
-  }
-  target="_blank"
-  style={{
-    display: "inline-block",
-    background: "#2563eb",
-    color: "white",
-    padding: "10px 16px",
-    borderRadius: "8px",
-    textDecoration: "none",
-    fontWeight: "bold",
-  }}
->
-  🚀 Launch Server
-</a>
+    🚀 Launch Server
+  </a>
+</div>
+  </p>
+
+  <a
+    href={
+      provider === "Oracle Cloud"
+        ? "https://www.oracle.com/cloud/"
+        : provider === "AWS"
+        ? "https://aws.amazon.com/free/"
+        : "https://www.vultr.com/"
+    }
+    target="_blank"
+    style={{
+      display: "inline-block",
+      background: "#2563eb",
+      color: "white",
+      padding: "10px 16px",
+      borderRadius: "8px",
+      textDecoration: "none",
+      fontWeight: "bold",
+    }}
+  >
+    🚀 Launch Server
+  </a>
+
+    
 
 <p style={{ marginTop: "10px", fontSize: "14px", color: "#666" }}>
   Takes ~5 minutes. No advanced knowledge needed.
