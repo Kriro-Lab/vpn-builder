@@ -459,7 +459,7 @@ const copyCommand = (text: string, index: number) => {
       </ul>
     </div>
   </div>
-</div>
+
 
 </main>
 
