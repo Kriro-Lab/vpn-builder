@@ -360,9 +360,27 @@ const copyCommand = (text: string, index: number) => {
     <p style={{ fontSize: "14px", color: "#666", marginBottom: "12px" }}>
   Recommended for most people
 </p>
-    🚀 Launch Server
-  </a>
-</div>
+    <a
+  href={
+    provider === "Oracle Cloud"
+      ? "https://www.oracle.com/cloud/"
+      : provider === "AWS"
+      ? "https://aws.amazon.com/free/"
+      : "https://www.vultr.com/"
+  }
+  target="_blank"
+  style={{
+    display: "inline-block",
+    background: "#2563eb",
+    color: "white",
+    padding: "10px 16px",
+    borderRadius: "8px",
+    textDecoration: "none",
+    fontWeight: "bold",
+  }}
+>
+  🚀 Launch Server
+</a>
 
 <p style={{ marginTop: "10px", fontSize: "14px", color: "#666" }}>
   Takes ~5 minutes. No advanced knowledge needed.
