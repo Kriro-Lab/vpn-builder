@@ -164,7 +164,7 @@ const copyCommand = (text: string, index: number) => {
 
 <div style={{ display: "grid", gap: "20px" }}>
 
-      <div
+      <div>
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
