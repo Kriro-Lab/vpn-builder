@@ -167,7 +167,7 @@ const [copied, setCopied] = useState(false)
 
 <div style={{ display: "grid", gap: "20px" }}>
 
-      <div>
+      <div
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
@@ -452,8 +452,7 @@ const [copied, setCopied] = useState(false)
     }}
     <div style={{ marginTop: "20px" }}>
   <button
-    <div style={{ marginTop: "20px" }}>
-  <button
+    
     onClick={async () => {
       try {
         const fullScript = selected.commands.join("\n")
