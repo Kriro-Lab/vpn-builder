@@ -519,16 +519,17 @@ boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
         padding: "20px",
       }}
     >
-      <h3 style={{ fontSize: "22px", marginBottom: "10px" }}>Quick Notes</h3>
-      <ul style={{ paddingLeft: "20px", margin: 0 }}>
-        {selectedProvider.notes.map((note) => (
-          <li key={note} style={{ marginBottom: "8px" }}>
-            {note}
-          </li>
-        ))}
-      </ul>
-    </div>
-  </div>
+      <h3 style={{ fontSize: "22px", marginBottom: "10px" }}>
+  Quick Notes
+</h3>
+
+<ul style={{ paddingLeft: "20px", margin: 0 }}>
+  {selectedProvider.notes.map((note) => (
+    <li key={note} style={{ marginBottom: "8px" }}>
+      {note}
+    </li>
+  ))}
+</ul>
   <h2 style={{ textAlign: "center", marginTop: "40px" }}>
   You now have your own private VPN
 </h2>
