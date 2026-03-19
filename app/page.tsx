@@ -452,11 +452,17 @@ const [copied, setCopied] = useState(false)
     }}
     <div style={{ marginTop: "20px" }}>
   <button
+    <div style={{ marginTop: "20px" }}>
+  <button
     onClick={async () => {
-      const fullScript = selected.commands.join("\n")
-      await navigator.clipboard.writeText(fullScript)
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2000)
+      try {
+        const fullScript = selected.commands.join("\n")
+        await navigator.clipboard.writeText(fullScript)
+        setCopied(true)
+        setTimeout(() => setCopied(false), 2000)
+      } catch (err) {
+        alert("Copy failed on this device. Please use Download Setup Script instead.")
+      }
     }}
     style={{
       background: "#000",
