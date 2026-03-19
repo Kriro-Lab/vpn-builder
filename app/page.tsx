@@ -96,6 +96,9 @@ const copyCommand = (text: string, index: number) => {
 
   const selected = protocolInfo[protocol]
   const selectedProvider = providerInfo[provider]
+  
+
+const [copied, setCopied] = useState(false)
 
   const cardStyle: React.CSSProperties = {
     border: "1px solid #ddd",
@@ -447,9 +450,28 @@ const copyCommand = (text: string, index: number) => {
       cursor: "pointer",
       marginRight: "10px"
     }}
-  >
-    📋 Copy Full Setup Script
-  </button>
+    <button
+  onClick={() => {
+    const fullScript = selected.commands.join("\n")
+    navigator.clipboard.writeText(fullScript)
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2000)
+  }}
+  style={{
+    background: "#000",
+    color: "white",
+    padding: "10px 16px",
+    borderRadius: "8px",
+    border: "none",
+    cursor: "pointer",
+    width: "100%",
+    marginBottom: "10px"
+  }}
+>
+  {copied ? "✅ Copied!" : "📋 Copy Full Setup Script"}
+</button>
+  
+  
 </div>
     <div style={{ marginTop: "12px" }}>
   <button
