@@ -130,8 +130,39 @@ const copyCommand = (text: string, index: number) => {
       </h1>
 
       <p style={{ fontSize: "20px", marginBottom: "40px", color: "#555", maxWidth: "700px" }}>
-        Learn how to build your own VPN with WireGuard, OpenVPN, or IKEv2 using Oracle Cloud or other providers.
+        Build your own private VPN in 5 minutes — no subscriptions, no experience needed.
       </p>
+      <div
+  style={{
+    background: "#f8fafc",
+    border: "1px solid #ddd",
+    borderRadius: "14px",
+    padding: "20px",
+    marginBottom: "30px",
+  }}
+>
+  <h2 style={{ fontSize: "22px", marginBottom: "10px" }}>
+    Start Here (Quick Setup)
+  </h2>
+
+  <p style={{ marginBottom: "10px", color: "#555" }}>
+    If you’re new, just follow this:
+  </p>
+
+  <ol style={{ paddingLeft: "20px", marginBottom: "10px" }}>
+    <li>Choose <strong>WireGuard</strong></li>
+    <li>Select <strong>Oracle Cloud (Free)</strong></li>
+    <li>Click <strong>Launch Server</strong></li>
+    <li>Copy the setup script</li>
+  </ol>
+
+  <p style={{ fontWeight: "bold" }}>Takes ~5 minutes</p>
+</div>
+      
+
+      
+
+<div style={{ display: "grid"...
 
       <div
         style={{
