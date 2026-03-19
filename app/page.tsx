@@ -400,6 +400,29 @@ const copyCommand = (text: string, index: number) => {
     🚀 Launch Server
   </a>
 </div>
+    <h2 style={{ fontSize: "32px", marginBottom: "10px" }}>
+  Step 4: Deploy Your Server
+</h2>
+
+<div style={{
+  background: "#f8fafc",
+  border: "1px solid #ddd",
+  borderRadius: "14px",
+  padding: "20px",
+  marginBottom: "30px",
+}}>
+  <ol style={{ paddingLeft: "20px", marginBottom: "10px" }}>
+    <li>Log into your cloud provider</li>
+    <li>Create a new virtual machine</li>
+    <li>Choose Ubuntu (recommended)</li>
+    <li>Select a small or free-tier instance</li>
+    <li>Copy your server’s public IP</li>
+  </ol>
+
+  <p style={{ color: "#555" }}>
+    Once your server is running, you’re ready to install your VPN.
+  </p>
+</div>
   
 
   
@@ -454,6 +477,27 @@ boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
     ⬇️ Download Setup Script
   </button>
 </div>
+  <h2 style={{ fontSize: "32px", marginBottom: "10px" }}>
+  Step 5: Connect Your Device
+</h2>
+
+<div style={{
+  background: "#f8fafc",
+  border: "1px solid #ddd",
+  borderRadius: "14px",
+  padding: "20px",
+  marginBottom: "50px",
+}}>
+  <ol style={{ paddingLeft: "20px", marginBottom: "10px" }}>
+    <li>Install the WireGuard app on your phone or computer</li>
+    <li>Import your configuration file</li>
+    <li>Tap “Activate”</li>
+  </ol>
+
+  <p style={{ fontWeight: "bold" }}>
+    Your VPN is now live 🎉
+  </p>
+</div>
 
     <div
       style={{
@@ -485,6 +529,13 @@ boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
       </ul>
     </div>
   </div>
+  <h2 style={{ textAlign: "center", marginTop: "40px" }}>
+  You now have your own private VPN
+</h2>
+
+<p style={{ textAlign: "center", color: "#555" }}>
+  No subscriptions. No tracking. Full control.
+</p>
 
 
 </main>
