@@ -162,7 +162,7 @@ const copyCommand = (text: string, index: number) => {
 
       
 
-<div style={{ display: "grid"...
+<div style={{ display: "grid", gap: "20px" }}>
 
       <div
         style={{
