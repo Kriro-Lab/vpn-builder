@@ -470,6 +470,9 @@ const [copied, setCopied] = useState(false)
 >
   {copied ? "✅ Copied!" : "📋 Copy Full Setup Script"}
 </button>
+>
+  {copied ? "✅ Copied!" : "📋 Copy Full Setup Script"}
+</button>
   
   
 </div>
