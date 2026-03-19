@@ -9,7 +9,7 @@ export default function VPNBuilder() {
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null)
 
 const copyCommand = (text: string, index: number) => {
-  navigator.clipboard.writeText(text)
+  navigator.clipboard.writeText(fullScript)
   setCopiedIndex(index)
 
   setTimeout(() => {
