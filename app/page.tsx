@@ -454,7 +454,7 @@ const [copied, setCopied] = useState(false)
   onClick={async () => {
     const fullScript = selected.commands.join("\n")
    await navigator.clipboard.writeText(fullScript)
-    setCopied(true)
+    setCopied(true);
     setTimeout(() => setCopied(false), 2000)
   }}
   style={{
