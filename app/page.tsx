@@ -450,26 +450,28 @@ const [copied, setCopied] = useState(false)
       cursor: "pointer",
       marginRight: "10px"
     }}
-    <button
-  onClick={async () => {
-    const fullScript = selected.commands.join("\n")
-   await navigator.clipboard.writeText(fullScript)
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000)
-  }}
-  style={{
-    background: "#000",
-    color: "white",
-    padding: "10px 16px",
-    borderRadius: "8px",
-    border: "none",
-    cursor: "pointer",
-    width: "100%",
-    marginBottom: "10px"
-  }}
->
-  {copied ? "✅ Copied!" : "📋 Copy Full Setup Script"}
-</button>
+    <div style={{ marginTop: "20px" }}>
+  <button
+    onClick={async () => {
+      const fullScript = selected.commands.join("\n")
+      await navigator.clipboard.writeText(fullScript)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    }}
+    style={{
+      background: "#000",
+      color: "white",
+      padding: "10px 16px",
+      borderRadius: "8px",
+      border: "none",
+      cursor: "pointer",
+      width: "100%",
+      marginBottom: "10px",
+    }}
+  >
+    {copied ? "✅ Copied!" : "📋 Copy Full Setup Script"}
+  </button>
+</div>
 
   
   
