@@ -450,6 +450,9 @@ const [copied, setCopied] = useState(false)
       cursor: "pointer",
       marginRight: "10px"
     }}
+    >
+  🚀 Launch Server
+</button>
     <div style={{ marginTop: "20px" }}>
   <button
     
