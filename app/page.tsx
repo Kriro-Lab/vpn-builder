@@ -453,7 +453,7 @@ const [copied, setCopied] = useState(false)
     <button
   onClick={() => {
     const fullScript = selected.commands.join("\n")
-    navigator.clipboard.writeText(fullScript)
+   await navigator.clipboard.writeText(fullScript)
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
   }}
@@ -470,15 +470,13 @@ const [copied, setCopied] = useState(false)
 >
   {copied ? "✅ Copied!" : "📋 Copy Full Setup Script"}
 </button>
->
-  {copied ? "✅ Copied!" : "📋 Copy Full Setup Script"}
-</button>
+
   
   
 </div>
     <div style={{ marginTop: "12px" }}>
   <button
-    onClick={() => {
+    onClick={async () => {
       const fullScript = selected.commands.join("\n")
       const blob = new Blob([fullScript], { type: "text/plain" })
       const url = URL.createObjectURL(blob)
