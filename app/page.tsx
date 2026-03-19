@@ -451,7 +451,7 @@ const [copied, setCopied] = useState(false)
       marginRight: "10px"
     }}
     <button
-  onClick={() => {
+  onClick={async () => {
     const fullScript = selected.commands.join("\n")
    await navigator.clipboard.writeText(fullScript)
     setCopied(true)
