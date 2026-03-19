@@ -477,7 +477,7 @@ const [copied, setCopied] = useState(false)
       marginBottom: "10px",
     }}
   >
-    {copied ? "✅ Copied!" : "📋 Copy Full Setup Script"}
+    📋 Copy Setup Script
   </button>
 </div>
 
