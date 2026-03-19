@@ -500,35 +500,40 @@ boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
 </div>
 
     <div
-      style={{
-        background: "#f8fafc",
-        border: "1px solid #ddd",
-        borderRadius: "14px",
-        padding: "20px",
-      }}
-    >
-      <h3 style={{ fontSize: "22px", marginBottom: "10px" }}>Region Tip</h3>
-      <p>{selectedProvider.regionTip}</p>
-    </div>
+  style={{
+    background: "#f8fafc",
+    border: "1px solid #ddd",
+    borderRadius: "14px",
+    padding: "20px",
+  }}
+>
+  <h3 style={{ fontSize: "22px", marginBottom: "10px" }}>
+    Region Tip
+  </h3>
+  <p>{selectedProvider.regionTip}</p>
+</div>
 
-    <div
-      style={{
-        background: "#f8fafc",
-        border: "1px solid #ddd",
-        borderRadius: "14px",
-        padding: "20px",
-      }}
-    >
-      <h3 style={{ fontSize: "22px", marginBottom: "10px" }}>
-  Quick Notes
-</h3>
+<div
+  style={{
+    background: "#f8fafc",
+    border: "1px solid #ddd",
+    borderRadius: "14px",
+    padding: "20px",
+  }}
+>
+  <h3 style={{ fontSize: "22px", marginBottom: "10px" }}>
+    Quick Notes
+  </h3>
+  <ul style={{ paddingLeft: "20px", margin: 0 }}>
+    {selectedProvider.notes.map((note) => (
+      <li key={note} style={{ marginBottom: "8px" }}>
+        {note}
+      </li>
+    ))}
+  </ul>
+</div>
 
-<ul style={{ paddingLeft: "20px", margin: 0 }}>
-  {selectedProvider.notes.map((note) => (
-    <li key={note} style={{ marginBottom: "8px" }}>
-      {note}
-    </li>
-  ))}
+</div>
 </ul>
   <h2 style={{ textAlign: "center", marginTop: "40px" }}>
   You now have your own private VPN
