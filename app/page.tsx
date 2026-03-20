@@ -426,7 +426,232 @@ const [copied, setCopied] = useState(false)
     Once your server is running, you’re ready to install your VPN.
   </p>
 </div>
-  
+  <section style={{ marginTop: "60px", marginBottom: "60px" }}>
+  <h2
+    style={{
+      fontSize: "2rem",
+      marginBottom: "12px",
+      color: "white",
+      textAlign: "center",
+    }}
+  >
+    Choose the Right Protocol
+  </h2>
+
+  <p
+    style={{
+      color: "#aaa",
+      textAlign: "center",
+      maxWidth: "760px",
+      margin: "0 auto 30px",
+      lineHeight: "1.6",
+    }}
+  >
+    Your provider is where the server runs. Your protocol is how your VPN connects.
+    Most people should start with WireGuard, but each option has its strengths.
+  </p>
+
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+      gap: "20px",
+    }}
+  >
+    <div
+      style={{
+        background: "#111",
+        border: "1px solid #222",
+        borderRadius: "16px",
+        padding: "24px",
+      }}
+    >
+      <h3 style={{ color: "white", marginBottom: "10px" }}>WireGuard</h3>
+      <p style={{ color: "#bbb", lineHeight: "1.6", marginBottom: "12px" }}>
+        Fast, modern, and the best choice for most users. Great for speed,
+        simplicity, and mobile devices.
+      </p>
+      <p style={{ color: "#888", fontSize: "0.95rem" }}>
+        Best for: beginners, speed, everyday use
+      </p>
+    </div>
+
+    <div
+      style={{
+        background: "#111",
+        border: "1px solid #222",
+        borderRadius: "16px",
+        padding: "24px",
+      }}
+    >
+      <h3 style={{ color: "white", marginBottom: "10px" }}>OpenVPN</h3>
+      <p style={{ color: "#bbb", lineHeight: "1.6", marginBottom: "12px" }}>
+        Well known and widely supported. A strong option if you want broad
+        compatibility and do not mind a little extra setup.
+      </p>
+      <p style={{ color: "#888", fontSize: "0.95rem" }}>
+        Best for: compatibility, older devices, flexibility
+      </p>
+    </div>
+
+    <div
+      style={{
+        background: "#111",
+        border: "1px solid #222",
+        borderRadius: "16px",
+        padding: "24px",
+      }}
+    >
+      <h3 style={{ color: "white", marginBottom: "10px" }}>IKEv2</h3>
+      <p style={{ color: "#bbb", lineHeight: "1.6", marginBottom: "12px" }}>
+        A solid option for phones and tablets because it reconnects well when
+        switching between Wi-Fi and mobile data.
+      </p>
+      <p style={{ color: "#888", fontSize: "0.95rem" }}>
+        Best for: mobile users, stable reconnection
+      </p>
+    </div>
+  </div>
+</section>
+
+<section style={{ marginTop: "60px", marginBottom: "60px" }}>
+  <h2
+    style={{
+      fontSize: "2rem",
+      marginBottom: "12px",
+      color: "white",
+      textAlign: "center",
+    }}
+  >
+    Recommended Hosting Providers
+  </h2>
+
+  <p
+    style={{
+      color: "#aaa",
+      textAlign: "center",
+      maxWidth: "760px",
+      margin: "0 auto 30px",
+      lineHeight: "1.6",
+    }}
+  >
+    Pick a provider based on your budget and experience level. Start free, keep
+    it simple, or go for the easiest beginner path.
+  </p>
+
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+      gap: "20px",
+    }}
+  >
+    <div
+      style={{
+        background: "#111",
+        border: "1px solid #222",
+        borderRadius: "16px",
+        padding: "24px",
+      }}
+    >
+      <h3 style={{ color: "white", marginBottom: "10px" }}>Oracle Cloud</h3>
+      <p style={{ color: "#bbb", lineHeight: "1.6", marginBottom: "12px" }}>
+        Best free option for users who want the lowest cost possible and do not
+        mind a little more setup.
+      </p>
+      <p style={{ color: "#888", fontSize: "0.95rem", marginBottom: "18px" }}>
+        Best for: free tier, cost savings, DIY users
+      </p>
+
+      <a
+        href="https://www.oracle.com/cloud/free/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          display: "inline-block",
+          background: "#fff",
+          color: "#000",
+          padding: "10px 16px",
+          borderRadius: "8px",
+          textDecoration: "none",
+          fontWeight: "600",
+        }}
+      >
+        Try Oracle Cloud
+      </a>
+    </div>
+
+    <div
+      style={{
+        background: "#111",
+        border: "1px solid #222",
+        borderRadius: "16px",
+        padding: "24px",
+      }}
+    >
+      <h3 style={{ color: "white", marginBottom: "10px" }}>DigitalOcean</h3>
+      <p style={{ color: "#bbb", lineHeight: "1.6", marginBottom: "12px" }}>
+        Clean, fast, and easy to launch. A great paid option for users who want
+        a straightforward cloud setup.
+      </p>
+      <p style={{ color: "#888", fontSize: "0.95rem", marginBottom: "18px" }}>
+        Best for: simplicity, speed, first paid server
+      </p>
+
+      <a
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          display: "inline-block",
+          background: "#fff",
+          color: "#000",
+          padding: "10px 16px",
+          borderRadius: "8px",
+          textDecoration: "none",
+          fontWeight: "600",
+        }}
+      >
+        View DigitalOcean
+      </a>
+    </div>
+
+    <div
+      style={{
+        background: "#111",
+        border: "1px solid #222",
+        borderRadius: "16px",
+        padding: "24px",
+      }}
+    >
+      <h3 style={{ color: "white", marginBottom: "10px" }}>Hostinger VPS</h3>
+      <p style={{ color: "#bbb", lineHeight: "1.6", marginBottom: "12px" }}>
+        A more beginner-friendly option for users who want something easier to
+        understand than a full cloud dashboard.
+      </p>
+      <p style={{ color: "#888", fontSize: "0.95rem", marginBottom: "18px" }}>
+        Best for: beginners, easier setup, guided hosting
+      </p>
+
+      <a
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          display: "inline-block",
+          background: "#fff",
+          color: "#000",
+          padding: "10px 16px",
+          borderRadius: "8px",
+          textDecoration: "none",
+          fontWeight: "600",
+        }}
+      >
+        View Hostinger VPS
+      </a>
+    </div>
+  </div>
+</section>
 
   
       
