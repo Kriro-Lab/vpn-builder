@@ -821,10 +821,10 @@ boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
       flexWrap: "wrap",
     }}
   >
-    <a href="/disclaimer" style={{ color: "#bbb", textDecoration: "none" }}>
+    <a href="/disclaimer" style={{ color: "#555", textDecoration: "none" }}>
       Disclaimer
     </a>
-    <a href="/terms" style={{ color: "#bbb", textDecoration: "none" }}>
+    <a href="/terms" style={{ color: "#555", textDecoration: "none" }}>
       Terms
     </a>
   </div>
