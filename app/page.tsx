@@ -800,7 +800,35 @@ boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
 <p style={{ textAlign: "center", color: "#555" }}>
   No subscriptions. No tracking. Full control.
 </p>
+<div
+  style={{
+    marginTop: "60px",
+    paddingTop: "24px",
+    borderTop: "1px solid #222",
+    textAlign: "center",
+  }}
+>
+  <p style={{ color: "#888", fontSize: "14px", marginBottom: "12px" }}>
+    For lawful use only. Users are responsible for complying with local laws
+    and service terms in their own jurisdiction.
+  </p>
 
+  <div
+    style={{
+      display: "flex",
+      gap: "16px",
+      justifyContent: "center",
+      flexWrap: "wrap",
+    }}
+  >
+    <a href="/disclaimer" style={{ color: "#bbb", textDecoration: "none" }}>
+      Disclaimer
+    </a>
+    <a href="/terms" style={{ color: "#bbb", textDecoration: "none" }}>
+      Terms
+    </a>
+  </div>
+</div>
 
 </main>
 
