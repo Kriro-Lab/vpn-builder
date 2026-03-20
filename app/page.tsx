@@ -808,7 +808,7 @@ boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
     textAlign: "center",
   }}
 >
-  <p style={{ color: "#888", fontSize: "14px", marginBottom: "12px" }}>
+  <p style={{ color: ,color: "#555" fontSize: "14px", marginBottom: "12px" }}>
     For lawful use only. Users are responsible for complying with local laws
     and service terms in their own jurisdiction.
   </p>
