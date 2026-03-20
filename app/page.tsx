@@ -567,7 +567,7 @@ boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
 </div>
 
 </div>
-
+</div>
   <h2 style={{ textAlign: "center", marginTop: "40px" }}>
   You now have your own private VPN
 </h2>
