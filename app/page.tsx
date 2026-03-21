@@ -161,8 +161,22 @@ const [copied, setCopied] = useState(false)
 
   <p style={{ fontWeight: "bold" }}>Takes ~5 minutes</p>
 </div>
-      <div style={{ marginTop: "20px", fontSize: "14px", color: "#555" }}>
-  💡 Tip: Some providers may require a small payment method or upgrade for better performance.
+      <div
+  style={{
+    marginTop: "20px",
+    marginBottom: "20px",
+    fontSize: "16px",
+    color: "#1f2937",
+    background: "#fff7ed",
+    border: "1px solid #fdba74",
+    padding: "12px 16px",
+    borderRadius: "10px",
+    fontWeight: 500,
+  }}
+>
+  💡 Tip: Some providers may require a payment method or offer better performance on paid plans.
+</div>
+      
 </div>
       
 
