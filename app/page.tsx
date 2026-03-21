@@ -191,7 +191,10 @@ const [copied, setCopied] = useState(false)
           gap: "20px",
           marginBottom: "50px",
         }}
+         >
       
+        
+    
         <div style={cardStyle}>
           <Shield size={28} />
           <h3>More Privacy</h3>
