@@ -551,12 +551,26 @@ const [copied, setCopied] = useState(false)
       color: "#aaa",
       textAlign: "center",
       maxWidth: "760px",
-      margin: "0 auto 30px",
+      margin: "0 auto 18px",
       lineHeight: "1.6",
     }}
   >
     Pick a provider based on your budget and experience level. Start free, keep
-    it simple, or go for the easiest beginner path.
+    it simple, or choose the easiest beginner-friendly option.
+  </p>
+
+  <p
+    style={{
+      color: "#666",
+      textAlign: "center",
+      maxWidth: "760px",
+      margin: "0 auto 30px",
+      lineHeight: "1.6",
+      fontSize: "14px",
+    }}
+  >
+    Some links on this page may be affiliate links, which means we may earn a
+    commission if you sign up through them, at no extra cost to you.
   </p>
 
   <div
@@ -574,13 +588,27 @@ const [copied, setCopied] = useState(false)
         padding: "24px",
       }}
     >
+      <div
+        style={{
+          color: "#777",
+          fontSize: "13px",
+          marginBottom: "8px",
+          textTransform: "uppercase",
+          letterSpacing: "0.08em",
+        }}
+      >
+        Best Free Option
+      </div>
+
       <h3 style={{ color: "white", marginBottom: "10px" }}>Oracle Cloud</h3>
+
       <p style={{ color: "#bbb", lineHeight: "1.6", marginBottom: "12px" }}>
-        Best free option for users who want the lowest cost possible and do not
-        mind a little more setup.
+        Great for users who want the lowest possible cost and do not mind a bit
+        more setup. A strong option for DIY users chasing value.
       </p>
+
       <p style={{ color: "#888", fontSize: "0.95rem", marginBottom: "18px" }}>
-        Best for: free tier, cost savings, DIY users
+        Best for: free tier, cost savings, hands-on setup
       </p>
 
       <a
@@ -597,7 +625,7 @@ const [copied, setCopied] = useState(false)
           fontWeight: "600",
         }}
       >
-        Try Oracle Cloud
+        View Oracle Cloud
       </a>
     </div>
 
@@ -609,19 +637,33 @@ const [copied, setCopied] = useState(false)
         padding: "24px",
       }}
     >
+      <div
+        style={{
+          color: "#777",
+          fontSize: "13px",
+          marginBottom: "8px",
+          textTransform: "uppercase",
+          letterSpacing: "0.08em",
+        }}
+      >
+        Best Simple Paid Option
+      </div>
+
       <h3 style={{ color: "white", marginBottom: "10px" }}>DigitalOcean</h3>
+
       <p style={{ color: "#bbb", lineHeight: "1.6", marginBottom: "12px" }}>
-        Clean, fast, and easy to launch. A great paid option for users who want
-        a straightforward cloud setup.
+        Clean, fast, and straightforward. A strong choice for people who want a
+        paid server without a messy setup process.
       </p>
+
       <p style={{ color: "#888", fontSize: "0.95rem", marginBottom: "18px" }}>
-        Best for: simplicity, speed, first paid server
+        Best for: simplicity, speed, first paid VPN server
       </p>
 
       <a
-        href="#"
+        href="YOUR-DIGITALOCEAN-AFFILIATE-LINK"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="sponsored nofollow noopener noreferrer"
         style={{
           display: "inline-block",
           background: "#fff",
@@ -644,19 +686,33 @@ const [copied, setCopied] = useState(false)
         padding: "24px",
       }}
     >
+      <div
+        style={{
+          color: "#777",
+          fontSize: "13px",
+          marginBottom: "8px",
+          textTransform: "uppercase",
+          letterSpacing: "0.08em",
+        }}
+      >
+        Best Beginner Option
+      </div>
+
       <h3 style={{ color: "white", marginBottom: "10px" }}>Hostinger VPS</h3>
+
       <p style={{ color: "#bbb", lineHeight: "1.6", marginBottom: "12px" }}>
-        A more beginner-friendly option for users who want something easier to
-        understand than a full cloud dashboard.
+        Easier to understand than a full cloud dashboard. A good option for
+        beginners who want a more guided hosting path.
       </p>
+
       <p style={{ color: "#888", fontSize: "0.95rem", marginBottom: "18px" }}>
-        Best for: beginners, easier setup, guided hosting
+        Best for: beginners, guided setup, simpler hosting
       </p>
 
       <a
-        href="#"
+        href="YOUR-HOSTINGER-AFFILIATE-LINK"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="sponsored nofollow noopener noreferrer"
         style={{
           display: "inline-block",
           background: "#fff",
