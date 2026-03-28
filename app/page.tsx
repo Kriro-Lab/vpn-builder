@@ -661,7 +661,7 @@ const [copied, setCopied] = useState(false)
       </p>
 
       <a
-        href="YOUR-DIGITALOCEAN-AFFILIATE-LINK"
+        href="#"
         target="_blank"
         rel="sponsored nofollow noopener noreferrer"
         style={{
@@ -710,7 +710,7 @@ const [copied, setCopied] = useState(false)
       </p>
 
       <a
-        href="YOUR-HOSTINGER-AFFILIATE-LINK"
+        href="#"
         target="_blank"
         rel="sponsored nofollow noopener noreferrer"
         style={{
